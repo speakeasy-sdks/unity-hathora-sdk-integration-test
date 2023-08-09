@@ -1,8 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using Hathora.Core.Scripts.Runtime.Client;
-using Hathora.Demos._1_FishNetDemo.HathoraScripts.Client.ClientMgr;
 using UnityEngine;
+
+using System.Threading;
+using System.Threading.Tasks;
+using Hathora.Cloud.Sdk.Api;
+using Hathora.Cloud.Sdk.Client;
+using Hathora.Cloud.Sdk.Model;
+using Hathora.Core.Scripts.Runtime.Client;
 
 /// <summary>
 /// Test controller to use with Speakeasy generated code
@@ -23,28 +28,14 @@ public class TestAPIController : MonoBehaviour
 
     #region UI
 
-    public void GetConnectionInfoAsync()
+    public void CreateRoom()
     {
-        Debug.Log("Start Async operation");
-        // TODO: GetLobbyInfoAsync
-        var hathora = HathoraClientSession.Singleton;
-        var serverInfo = hathora.ServerConnectionInfo;
-        if (serverInfo != null)
-        {
-            Debug.Log($"server status: {serverInfo.Status}, room: {serverInfo.RoomId}");
-        }
-        else
-        {
-            Debug.LogWarning("server info not available");
-        }
-
-        var manager = HathoraFishnetClientMgr.Singleton;
-
+        Debug.Log("Create room using Speakeasy");
     }
 
     public void GetConnectionInfoSpeakeasyAsync()
     {
-        Debug.Log("Start Async operation using Speakeasy");
+        Debug.Log("Start Async task using Speakeasy");
     }
 
     #endregion

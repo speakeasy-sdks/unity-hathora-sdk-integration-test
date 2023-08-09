@@ -1,0 +1,5 @@
+/Users/manjitbedi/Projects/Work/Speakeasy/hathora-sdk-test/SpeakeasyHathora/obj/Debug/net5.0/SpeakeasyHathora.csproj.AssemblyReference.cache
+/Users/manjitbedi/Projects/Work/Speakeasy/hathora-sdk-test/SpeakeasyHathora/obj/Debug/net5.0/SpeakeasyHathora.GeneratedMSBuildEditorConfig.editorconfig
+/Users/manjitbedi/Projects/Work/Speakeasy/hathora-sdk-test/SpeakeasyHathora/obj/Debug/net5.0/SpeakeasyHathora.AssemblyInfoInputs.cache
+/Users/manjitbedi/Projects/Work/Speakeasy/hathora-sdk-test/SpeakeasyHathora/obj/Debug/net5.0/SpeakeasyHathora.AssemblyInfo.cs
+/Users/manjitbedi/Projects/Work/Speakeasy/hathora-sdk-test/SpeakeasyHathora/obj/Debug/net5.0/SpeakeasyHathora.csproj.CoreCompileInputs.cache
