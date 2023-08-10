@@ -1,0 +1,9 @@
+configVersion: 1.0.0
+generation:
+  sdkClassName: speakeasyHathora
+  singleTagPerOp: false
+unity:
+  version: 0.0.1
+  author: hathora
+  maxMethodParams: 0
+  packageName: hathora
