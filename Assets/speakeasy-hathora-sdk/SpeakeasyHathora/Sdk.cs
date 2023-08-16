@@ -26,7 +26,6 @@ using SpeakeasyHathora.LogV1;
 using SpeakeasyHathora.ManagementV1;
 using SpeakeasyHathora.MetricsV1;
 using SpeakeasyHathora.ProcessesV1;
-using SpeakeasyHathora.RoomV1;
 using SpeakeasyHathora.RoomV2;
 using SpeakeasyHathora.Utils;
 
@@ -44,7 +43,6 @@ using SpeakeasyHathora.Utils;
         public IManagementV1SDK ManagementV1 { get; }
         public IMetricsV1SDK MetricsV1 { get; }
         public IProcessesV1SDK ProcessesV1 { get; }
-        public IRoomV1SDK RoomV1 { get; }
         public IRoomV2SDK RoomV2 { get; }
     }public class SDKConfig
     {
@@ -79,7 +77,6 @@ using SpeakeasyHathora.Utils;
         public IManagementV1SDK ManagementV1 { get; private set; }
         public IMetricsV1SDK MetricsV1 { get; private set; }
         public IProcessesV1SDK ProcessesV1 { get; private set; }
-        public IRoomV1SDK RoomV1 { get; private set; }
         public IRoomV2SDK RoomV2 { get; private set; }
 
         public SpeakeasyHathoraSDK(UnityWebRequest? client = null, string? serverUrl = null)
@@ -108,7 +105,6 @@ using SpeakeasyHathora.Utils;
             ManagementV1 = new ManagementV1SDK(_defaultClient, _securityClient, Config);
             MetricsV1 = new MetricsV1SDK(_defaultClient, _securityClient, Config);
             ProcessesV1 = new ProcessesV1SDK(_defaultClient, _securityClient, Config);
-            RoomV1 = new RoomV1SDK(_defaultClient, _securityClient, Config);
             RoomV2 = new RoomV2SDK(_defaultClient, _securityClient, Config);
         }
     }

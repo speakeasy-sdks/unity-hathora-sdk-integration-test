@@ -115,16 +115,6 @@ var res = await sdk.AppV1.CreateAppAsync(new CreateAppSecurity() {
 * [GetRunningProcesses](docs/Sdks/ProcessesV1/README.md#getrunningprocesses) - Returns an array of active [process](https://hathora.dev/docs/concepts/hathora-entities#process) objects for an existing [application](https://hathora.dev/docs/concepts/hathora-entities#application) using `appId`. Filter the array by optionally passing in a region.
 * [GetStoppedProcesses](docs/Sdks/ProcessesV1/README.md#getstoppedprocesses) - Returns an array of stopped [process](https://hathora.dev/docs/concepts/hathora-entities#process) objects for an existing [application](https://hathora.dev/docs/concepts/hathora-entities#application) using `appId`. Filter the array by optionally passing in a region.
 
-### [roomV1](docs/Sdks/RoomV1/README.md)
-
-* [~~CreateRoomDeprecated~~](docs/Sdks/RoomV1/README.md#createroomdeprecated) - :warning: **Deprecated**
-* [~~DestroyRoomDeprecated~~](docs/Sdks/RoomV1/README.md#destroyroomdeprecated) - :warning: **Deprecated**
-* [~~GetActiveRoomsForProcessDeprecated~~](docs/Sdks/RoomV1/README.md#getactiveroomsforprocessdeprecated) - :warning: **Deprecated**
-* [~~GetConnectionInfoDeprecated~~](docs/Sdks/RoomV1/README.md#getconnectioninfodeprecated) - :warning: **Deprecated**
-* [~~GetInactiveRoomsForProcessDeprecated~~](docs/Sdks/RoomV1/README.md#getinactiveroomsforprocessdeprecated) - :warning: **Deprecated**
-* [~~GetRoomInfoDeprecated~~](docs/Sdks/RoomV1/README.md#getroominfodeprecated) - :warning: **Deprecated**
-* [~~SuspendRoomDeprecated~~](docs/Sdks/RoomV1/README.md#suspendroomdeprecated) - :warning: **Deprecated**
-
 ### [roomV2](docs/Sdks/RoomV2/README.md)
 
 * [CreateRoom](docs/Sdks/RoomV2/README.md#createroom) - Create a new [room](https://hathora.dev/docs/concepts/hathora-entities#room) for an existing [application](https://hathora.dev/docs/concepts/hathora-entities#application) using `appId` and `region`.

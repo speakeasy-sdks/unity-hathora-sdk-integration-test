@@ -23,7 +23,6 @@ Create a new [room](https://hathora.dev/docs/concepts/hathora-entities#room) for
 ```unity
 using SpeakeasyHathora;
 using SpeakeasyHathora.Models.RoomV2;
-using SpeakeasyHathora.Models.RoomV1;
 using SpeakeasyHathora.Models.Shared;
 
 var sdk = new SpeakeasyHathoraSDK();
@@ -32,7 +31,7 @@ var res = await sdk.RoomV2.CreateRoomAsync(new CreateRoomSecurity() {
     Auth0 = "",
 }, new CreateRoomRequest() {
     CreateRoomRequest = new CreateRoomRequest() {
-        Region = SpeakeasyHathora.Models.Shared.Region.WashingtonDC,
+        Region = SpeakeasyHathora.Models.Shared.Region.Tokyo,
     },
     AppId = "app-af469a92-5b45-4565-b3c4-b79878de67d2",
     RoomId = "2swovpy1fnunu",
