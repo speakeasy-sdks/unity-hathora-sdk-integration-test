@@ -54,6 +54,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<CreateAppResponse> CreateAppAsync(CreateAppSecurity security, AppConfig request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = AppConfig.BuildHttpRequestMessage("CreateApp", request, baseUrl);
         var client = _defaultClient;
@@ -101,6 +102,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<DeleteAppResponse> DeleteAppAsync(DeleteAppSecurity security, DeleteAppRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = DeleteAppRequest.BuildHttpRequestMessage("DeleteApp", request, baseUrl);
         var client = _defaultClient;
@@ -144,6 +146,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetAppInfoResponse> GetAppInfoAsync(GetAppInfoSecurity security, GetAppInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetAppInfoRequest.BuildHttpRequestMessage("GetAppInfo", request, baseUrl);
         var client = _defaultClient;
@@ -183,6 +186,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetAppsResponse> GetAppsAsync(GetAppsSecurity security)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UnityWebRequest.Get(baseUrl + "/apps/v1/list");
         var client = _defaultClient;
@@ -214,6 +218,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<UpdateAppResponse> UpdateAppAsync(UpdateAppSecurity security, UpdateAppRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UpdateAppRequest.BuildHttpRequestMessage("UpdateApp", request, baseUrl);
         var client = _defaultClient;

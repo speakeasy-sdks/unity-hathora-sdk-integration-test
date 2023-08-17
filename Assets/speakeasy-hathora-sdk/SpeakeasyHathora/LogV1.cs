@@ -48,6 +48,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetLogsForAppResponse> GetLogsForAppAsync(GetLogsForAppSecurity security, GetLogsForAppRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetLogsForAppRequest.BuildHttpRequestMessage("GetLogsForApp", request, baseUrl);
         var client = _defaultClient;
@@ -87,6 +88,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetLogsForDeploymentResponse> GetLogsForDeploymentAsync(GetLogsForDeploymentSecurity security, GetLogsForDeploymentRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetLogsForDeploymentRequest.BuildHttpRequestMessage("GetLogsForDeployment", request, baseUrl);
         var client = _defaultClient;
@@ -126,6 +128,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetLogsForProcessResponse> GetLogsForProcessAsync(GetLogsForProcessSecurity security, GetLogsForProcessRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetLogsForProcessRequest.BuildHttpRequestMessage("GetLogsForProcess", request, baseUrl);
         var client = _defaultClient;

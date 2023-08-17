@@ -11,11 +11,13 @@
 namespace SpeakeasyHathora.AuthV1
 {
     using System;
-using System.Threading.Tasks;
+    using System.Diagnostics;
+    using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SpeakeasyHathora.Models.AuthV1;
 using SpeakeasyHathora.Models.Shared;
 using SpeakeasyHathora.Utils;
+using UnityEngine;
 
     public interface IAuthV1SDK
     {
@@ -47,7 +49,9 @@ using SpeakeasyHathora.Utils;
         
     public async Task<LoginAnonymousResponse> LoginAnonymousAsync(LoginAnonymousRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
+        UnityEngine.Debug.LogWarning("base URL is not set");
         var message = LoginAnonymousRequest.BuildHttpRequestMessage("LoginAnonymous", request, baseUrl);
         var client = _defaultClient;
 
@@ -82,6 +86,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<LoginGoogleResponse> LoginGoogleAsync(LoginGoogleRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = LoginGoogleRequest.BuildHttpRequestMessage("LoginGoogle", request, baseUrl);
         var client = _defaultClient;
@@ -125,6 +130,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<LoginNicknameResponse> LoginNicknameAsync(LoginNicknameRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = LoginNicknameRequest.BuildHttpRequestMessage("LoginNickname", request, baseUrl);
         var client = _defaultClient;

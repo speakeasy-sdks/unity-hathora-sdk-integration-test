@@ -49,6 +49,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetMetricsResponse> GetMetricsAsync(GetMetricsSecurity security, GetMetricsRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetMetricsRequest.BuildHttpRequestMessage("GetMetrics", request, baseUrl);
         var client = _defaultClient;

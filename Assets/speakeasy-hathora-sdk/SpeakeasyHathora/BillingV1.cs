@@ -50,6 +50,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<GetBalanceResponse> GetBalanceAsync(GetBalanceSecurity security)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UnityWebRequest.Get(baseUrl + "/billing/v1/balance");
         var client = _defaultClient;
@@ -86,6 +87,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<GetInvoicesResponse> GetInvoicesAsync(GetInvoicesSecurity security)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UnityWebRequest.Get(baseUrl + "/billing/v1/invoices");
         var client = _defaultClient;
@@ -122,6 +124,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<GetPaymentMethodResponse> GetPaymentMethodAsync(GetPaymentMethodSecurity security)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UnityWebRequest.Get(baseUrl + "/billing/v1/paymentmethod");
         var client = _defaultClient;
@@ -166,6 +169,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<InitStripeCustomerPortalUrlResponse> InitStripeCustomerPortalUrlAsync(InitStripeCustomerPortalUrlSecurity security, CustomerPortalUrl request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CustomerPortalUrl.BuildHttpRequestMessage("InitStripeCustomerPortalUrl", request, baseUrl);
         var client = _defaultClient;

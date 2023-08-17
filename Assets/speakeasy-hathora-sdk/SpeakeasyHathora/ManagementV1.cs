@@ -45,6 +45,7 @@ using SpeakeasyHathora.Utils;
         
     public async Task<SendVerificationEmailResponse> SendVerificationEmailAsync(VerificationEmailRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = VerificationEmailRequest.BuildHttpRequestMessage("SendVerificationEmail", request, baseUrl);
         var client = _defaultClient;

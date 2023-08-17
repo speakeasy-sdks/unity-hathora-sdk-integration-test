@@ -53,6 +53,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<CreateBuildResponse> CreateBuildAsync(CreateBuildSecurity security, CreateBuildRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreateBuildRequest.BuildHttpRequestMessage("CreateBuild", request, baseUrl);
         var client = _defaultClient;
@@ -100,6 +101,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<DeleteBuildResponse> DeleteBuildAsync(DeleteBuildSecurity security, DeleteBuildRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = DeleteBuildRequest.BuildHttpRequestMessage("DeleteBuild", request, baseUrl);
         var client = _defaultClient;
@@ -151,6 +153,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetBuildInfoResponse> GetBuildInfoAsync(GetBuildInfoSecurity security, GetBuildInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetBuildInfoRequest.BuildHttpRequestMessage("GetBuildInfo", request, baseUrl);
         var client = _defaultClient;
@@ -190,6 +193,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetBuildsResponse> GetBuildsAsync(GetBuildsSecurity security, GetBuildsRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetBuildsRequest.BuildHttpRequestMessage("GetBuilds", request, baseUrl);
         var client = _defaultClient;
@@ -229,6 +233,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<RunBuildResponse> RunBuildAsync(RunBuildSecurity security, RunBuildRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = RunBuildRequest.BuildHttpRequestMessage("RunBuild", request, baseUrl);
         var client = _defaultClient;

@@ -55,6 +55,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<CreateLobbyResponse> CreateLobbyAsync(CreateLobbyRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreateLobbyRequest.BuildHttpRequestMessage("CreateLobby", request, baseUrl);
         var client = _defaultClient;
@@ -131,6 +132,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<CreateLocalLobbyResponse> CreateLocalLobbyAsync(CreateLocalLobbyRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreateLocalLobbyRequest.BuildHttpRequestMessage("CreateLocalLobby", request, baseUrl);
         var client = _defaultClient;
@@ -207,6 +209,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<CreatePrivateLobbyResponse> CreatePrivateLobbyAsync(CreatePrivateLobbyRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreatePrivateLobbyRequest.BuildHttpRequestMessage("CreatePrivateLobby", request, baseUrl);
         var client = _defaultClient;
@@ -283,6 +286,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<CreatePublicLobbyResponse> CreatePublicLobbyAsync(CreatePublicLobbyRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreatePublicLobbyRequest.BuildHttpRequestMessage("CreatePublicLobby", request, baseUrl);
         var client = _defaultClient;
@@ -361,6 +365,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetLobbyInfoResponse> GetLobbyInfoAsync(GetLobbyInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetLobbyInfoRequest.BuildHttpRequestMessage("GetLobbyInfo", request, baseUrl);
         var client = _defaultClient;
@@ -399,6 +404,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<ListActivePublicLobbiesResponse> ListActivePublicLobbiesAsync(ListActivePublicLobbiesRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = ListActivePublicLobbiesRequest.BuildHttpRequestMessage("ListActivePublicLobbies", request, baseUrl);
         var client = _defaultClient;
@@ -429,6 +435,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<SetLobbyStateResponse> SetLobbyStateAsync(SetLobbyStateSecurity security, SetLobbyStateRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = SetLobbyStateRequest.BuildHttpRequestMessage("SetLobbyState", request, baseUrl);
         var client = _defaultClient;

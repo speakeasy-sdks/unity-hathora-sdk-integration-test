@@ -55,6 +55,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<CreateRoomResponse> CreateRoomAsync(CreateRoomSecurity security, CreateRoomRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreateRoomRequest.BuildHttpRequestMessage("CreateRoom", request, baseUrl);
         var client = _defaultClient;
@@ -118,6 +119,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<DestroyRoomResponse> DestroyRoomAsync(DestroyRoomSecurity security, DestroyRoomRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = DestroyRoomRequest.BuildHttpRequestMessage("DestroyRoom", request, baseUrl);
         var client = _defaultClient;
@@ -161,6 +163,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetActiveRoomsForProcessResponse> GetActiveRoomsForProcessAsync(GetActiveRoomsForProcessSecurity security, GetActiveRoomsForProcessRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetActiveRoomsForProcessRequest.BuildHttpRequestMessage("GetActiveRoomsForProcess", request, baseUrl);
         var client = _defaultClient;
@@ -200,6 +203,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetConnectionInfoResponse> GetConnectionInfoAsync(GetConnectionInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetConnectionInfoRequest.BuildHttpRequestMessage("GetConnectionInfo", request, baseUrl);
         var client = _defaultClient;
@@ -254,6 +258,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetInactiveRoomsForProcessResponse> GetInactiveRoomsForProcessAsync(GetInactiveRoomsForProcessSecurity security, GetInactiveRoomsForProcessRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetInactiveRoomsForProcessRequest.BuildHttpRequestMessage("GetInactiveRoomsForProcess", request, baseUrl);
         var client = _defaultClient;
@@ -293,6 +298,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetRoomInfoResponse> GetRoomInfoAsync(GetRoomInfoSecurity security, GetRoomInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetRoomInfoRequest.BuildHttpRequestMessage("GetRoomInfo", request, baseUrl);
         var client = _defaultClient;
@@ -332,6 +338,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<SuspendRoomResponse> SuspendRoomAsync(SuspendRoomSecurity security, SuspendRoomRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = SuspendRoomRequest.BuildHttpRequestMessage("SuspendRoom", request, baseUrl);
         var client = _defaultClient;

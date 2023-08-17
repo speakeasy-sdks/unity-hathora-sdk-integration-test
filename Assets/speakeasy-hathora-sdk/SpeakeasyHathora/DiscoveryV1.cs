@@ -50,6 +50,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetPingServiceEndpointsResponse> GetPingServiceEndpointsAsync()
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = UnityWebRequest.Get(baseUrl + "/discovery/v1/ping");
         var client = _defaultClient;

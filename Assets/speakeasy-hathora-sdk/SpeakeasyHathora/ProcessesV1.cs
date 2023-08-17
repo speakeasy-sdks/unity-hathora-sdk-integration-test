@@ -51,6 +51,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetProcessInfoResponse> GetProcessInfoAsync(GetProcessInfoSecurity security, GetProcessInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetProcessInfoRequest.BuildHttpRequestMessage("GetProcessInfo", request, baseUrl);
         var client = _defaultClient;
@@ -90,6 +91,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetRunningProcessesResponse> GetRunningProcessesAsync(GetRunningProcessesSecurity security, GetRunningProcessesRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetRunningProcessesRequest.BuildHttpRequestMessage("GetRunningProcesses", request, baseUrl);
         var client = _defaultClient;
@@ -129,6 +131,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetStoppedProcessesResponse> GetStoppedProcessesAsync(GetStoppedProcessesSecurity security, GetStoppedProcessesRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetStoppedProcessesRequest.BuildHttpRequestMessage("GetStoppedProcesses", request, baseUrl);
         var client = _defaultClient;

@@ -51,6 +51,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<CreateDeploymentResponse> CreateDeploymentAsync(CreateDeploymentSecurity security, CreateDeploymentRequest request)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreateDeploymentRequest.BuildHttpRequestMessage("CreateDeployment", request, baseUrl);
         var client = _defaultClient;
@@ -106,6 +107,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetDeploymentInfoResponse> GetDeploymentInfoAsync(GetDeploymentInfoSecurity security, GetDeploymentInfoRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetDeploymentInfoRequest.BuildHttpRequestMessage("GetDeploymentInfo", request, baseUrl);
         var client = _defaultClient;
@@ -145,6 +147,7 @@ using SpeakeasyHathora.Utils;
     /// </summary>
     public async Task<GetDeploymentsResponse> GetDeploymentsAsync(GetDeploymentsSecurity security, GetDeploymentsRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = GetDeploymentsRequest.BuildHttpRequestMessage("GetDeployments", request, baseUrl);
         var client = _defaultClient;

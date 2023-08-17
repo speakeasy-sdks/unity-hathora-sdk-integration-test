@@ -49,6 +49,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<CreatePrivateLobbyDeprecatedResponse> CreatePrivateLobbyDeprecatedAsync(CreatePrivateLobbyDeprecatedRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreatePrivateLobbyDeprecatedRequest.BuildHttpRequestMessage("CreatePrivateLobbyDeprecated", request, baseUrl);
         var client = _defaultClient;
@@ -125,6 +126,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<CreatePublicLobbyDeprecatedResponse> CreatePublicLobbyDeprecatedAsync(CreatePublicLobbyDeprecatedRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = CreatePublicLobbyDeprecatedRequest.BuildHttpRequestMessage("CreatePublicLobbyDeprecated", request, baseUrl);
         var client = _defaultClient;
@@ -201,6 +203,7 @@ using SpeakeasyHathora.Utils;
     [Obsolete("This method will be removed in a future release, please migrate away from it as soon as possible")]
     public async Task<ListActivePublicLobbiesDeprecatedResponse> ListActivePublicLobbiesDeprecatedAsync(ListActivePublicLobbiesDeprecatedRequest? request = null)
     {
+        // #debug warning base url is an empty string
         string baseUrl = "";
         var message = ListActivePublicLobbiesDeprecatedRequest.BuildHttpRequestMessage("ListActivePublicLobbiesDeprecated", request, baseUrl);
         var client = _defaultClient;
