@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Hathora/Demos/1-FishNetDemo/HathoraDemoScene-FishNet.unity
-    guid: 4680c4744e9021f469e23205b96fdcd5
+  m_Scenes: []
   m_configObjects: {}

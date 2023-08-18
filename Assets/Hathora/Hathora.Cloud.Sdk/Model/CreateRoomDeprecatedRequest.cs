@@ -25,10 +25,10 @@ using OpenAPIDateConverter = Hathora.Cloud.Sdk.Client.OpenAPIDateConverter;
 namespace Hathora.Cloud.Sdk.Model
 {
     /// <summary>
-    /// CreateRoomDeprecatedRequest
+    /// CreateRoomdRequest
     /// </summary>
-    [DataContract(Name = "CreateRoomDeprecated_request")]
-    public partial class CreateRoomDeprecatedRequest : IEquatable<CreateRoomDeprecatedRequest>
+    [DataContract(Name = "CreateRoomd_request")]
+    public partial class CreateRoomdRequest : IEquatable<CreateRoomdRequest>
     {
 
         /// <summary>
@@ -37,18 +37,18 @@ namespace Hathora.Cloud.Sdk.Model
         [DataMember(Name = "region", IsRequired = true, EmitDefaultValue = true)]
         public Region Region { get; set; }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateRoomDeprecatedRequest" /> class.
+        /// Initializes a new instance of the <see cref="CreateRoomdRequest" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CreateRoomDeprecatedRequest()
+        protected CreateRoomdRequest()
         {
             this.AdditionalProperties = new Dictionary<string, object>();
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateRoomDeprecatedRequest" /> class.
+        /// Initializes a new instance of the <see cref="CreateRoomdRequest" /> class.
         /// </summary>
         /// <param name="region">region (required).</param>
-        public CreateRoomDeprecatedRequest(Region region = default(Region))
+        public CreateRoomdRequest(Region region = default(Region))
         {
             this.Region = region;
             this.AdditionalProperties = new Dictionary<string, object>();
@@ -67,7 +67,7 @@ namespace Hathora.Cloud.Sdk.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class CreateRoomDeprecatedRequest {\n");
+            sb.Append("class CreateRoomdRequest {\n");
             sb.Append("  Region: ").Append(Region).Append("\n");
             sb.Append("  AdditionalProperties: ").Append(AdditionalProperties).Append("\n");
             sb.Append("}\n");
@@ -90,15 +90,15 @@ namespace Hathora.Cloud.Sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CreateRoomDeprecatedRequest);
+            return this.Equals(input as CreateRoomdRequest);
         }
 
         /// <summary>
-        /// Returns true if CreateRoomDeprecatedRequest instances are equal
+        /// Returns true if CreateRoomdRequest instances are equal
         /// </summary>
-        /// <param name="input">Instance of CreateRoomDeprecatedRequest to be compared</param>
+        /// <param name="input">Instance of CreateRoomdRequest to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CreateRoomDeprecatedRequest input)
+        public bool Equals(CreateRoomdRequest input)
         {
             if (input == null)
             {
